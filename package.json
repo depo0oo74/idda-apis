@@ -8,7 +8,7 @@
     "start": "node ./dist/app.js"
   },
   "keywords": [
-    "books",
+    "natural products",
     "ecommrece"
   ],
   "author": "ahmed eldeeb",
