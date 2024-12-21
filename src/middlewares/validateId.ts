@@ -7,7 +7,7 @@ const validateId = (req: Request, res: Response, next: NextFunction) => {
     if (!objectId.isValid(elementId)) {
         return res.status(400).send({
             status: "Error",
-            message: "Invalid ID format",
+            message: "Invalid ID format.",
         });
     } else {
         next();

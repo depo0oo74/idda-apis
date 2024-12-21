@@ -16,10 +16,16 @@ import "./database";
 // app.use(express.static('src/uploads'));
 
 // ** Import Routes
-import categoriesRoutes from "./routes/categories.routes"
+import faqsRoutes from "./routes/faqs"
 
 // ** Using Routes
-app.use(categoriesRoutes);
+app.use(faqsRoutes)
+app.use('*', (_, res) => {
+  res.status(404).send({
+    status: 'Error',
+    message: '404 - Not found Api.'
+  })
+})
 
 
 // ** PORT to run
